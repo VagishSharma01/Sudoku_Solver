@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <com.example.sudokusolver.SudokuBoard
+
+        android:id="@+id/SudokuBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="191dp"
+        custom:boardColor="#000000"
+        custom:cellFillColor="#6600DDFF"
+        custom:cellsHighlightColor="#2600DDFF"
+        custom:layout_constraintBottom_toTopOf="@+id/solveButton"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toTopOf="parent"
+        custom:layout_constraintVertical_bias="0.0"
+        custom:letterColor="#000000"
+        custom:letterColorError="#FF0000"
+        custom:letterColorSolve="#00FF00">
+
+
+    </com.example.sudokusolver.SudokuBoard>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="225dp"
+        android:orientation="horizontal"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintHorizontal_bias="0.521"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/SudokuBoard">
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="BTNOnePress"
+            android:text="@string/One"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="BTNTwoPress"
+            android:text="@string/Two"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="BTNThreePress"
+            android:text="@string/Three"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="BTNFourPress"
+            android:text="@string/Four"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="BTNFivePress"
+            android:text="@string/Five"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="BTNSixPress"
+            android:text="@string/Six"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="BTNSevenPress"
+            android:text="@string/Seven"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="BTNEightPress"
+            android:text="@string/Eight"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="BTNNinePress"
+            android:text="@string/Nine"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            tools:ignore="UsingOnClickInXml" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/solveButton"
+        android:layout_width="138dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="152dp"
+        android:background="@drawable/solve_btn"
+        android:onClick="solve"
+        android:text="@string/solve"
+        android:textSize="18sp"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        custom:layout_constraintHorizontal_bias="1.0"
+        custom:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

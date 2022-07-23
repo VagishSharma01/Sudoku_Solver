@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SudokuSolver</string>
+
+    <string name="One">1</string>
+    <string name="Two">2</string>
+    <string name="Three">3</string>
+    <string name="Four">4</string>
+    <string name="Five">5</string>
+    <string name="Six">6</string>
+    <string name="Seven">7</string>
+    <string name="Eight">8</string>
+    <string name="Nine">9</string>
+
+
+    <string name="solve">Solve</string>
+    <string name="clear">Clear</string>
+
+
+</resources>
